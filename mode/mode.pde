@@ -18,10 +18,14 @@ final int game = 1;
 final int pause = 2;
 final int gameOver = 3;
 final int options = 4;
-//target vareables===============================================================
+// vareables===============================================================
+float slider;
 float x,y,d;
 float vx,vy;
+int highscore;
 int score, lives;
+float size;
+float thickness;
 //sound variable======================================================================
 Minim minim;
 AudioPlayer theme,coin,bump,gameover;
@@ -43,6 +47,9 @@ vx = random(-5,5);
 vy = random(-5,5);
 lives = 3;
 score =0;
+slider = 500;
+size = 50;
+thickness = 60;
 //minim
 minim = new Minim(this);
 theme = minim.loadFile("theme.mp3");
