@@ -4,6 +4,8 @@ void intro(){
   fill (255);
   background(200);
 
+
+
 if(mouseX > 300 && mouseX < 500 && mouseY > 500 && mouseY <600) {
   stroke(255,0,0);
 }else{
@@ -27,6 +29,8 @@ text("options",405,650);
 
 void introClicks(){
   
+
+ 
  if(mouseX > 300 && mouseX < 500 && mouseY > 500 && mouseY <600)
  mode = game;
 

@@ -26,6 +26,10 @@ int highscore;
 int score, lives;
 float size;
 float thickness;
+int selected = 1;
+ 
+PImage vans,santa,spit;
+
 //sound variable======================================================================
 Minim minim;
 AudioPlayer theme,coin,bump,gameover;
@@ -50,6 +54,10 @@ score =0;
 slider = 500;
 size = 50;
 thickness = 60;
+vans = loadImage("vans.png");
+spit = loadImage("spit.png");
+santa = loadImage("santa.png");
+
 //minim
 minim = new Minim(this);
 theme = minim.loadFile("theme.mp3");
